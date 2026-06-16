@@ -1,0 +1,45 @@
+# ---- Secrets / credentials (NEVER commit) ----
+.env
+*.pem
+*.key
+kaggle.json
+**/secrets.*
+*token*
+*TOKEN*
+
+# ---- Data (do not commit raw or processed datasets) ----
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.csv
+*.parquet
+*.feather
+
+# ---- Trained models / artifacts ----
+*.joblib
+*.pkl
+*.pickle
+models/
+artifacts/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
